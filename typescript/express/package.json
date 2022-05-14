@@ -1,0 +1,50 @@
+{
+    "name": "",
+    "version": "1.0.0",
+    "main": "dist/main.js",
+    "author": "Name <email> (url)",
+    "license": "MIT",
+    "description": "",
+    "scripts": {
+        "build": "npx tsc",
+        "start": "node dist/main.js",
+        "dev": "concurrently \"npx tsc --watch\" \"npx nodemon -q dist/main.js\"",
+        "format": "prettier --ignore-path .gitignore --write \"**/*.{json,js,jsx,ts,tsx}\"",
+        "lint": "eslint '*/**/*.{ts,tsx}' --max-warnings 0",
+        "test": "jest --config jestconfig.json"
+    },
+    "dependencies": {
+        "argon2": "^0.28.5",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.1",
+        "express": "^4.18.1",
+        "jsonwebtoken": "^8.5.1",
+        "pg": "^8.7.3"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.12",
+        "@types/express": "^4.17.13",
+        "@types/jest": "^27.5.1",
+        "@types/jsonwebtoken": "^8.5.8",
+        "@types/node": "^17.0.33",
+        "@types/pg": "^8.6.5",
+        "@typescript-eslint/eslint-plugin": "^5.23.0",
+        "@typescript-eslint/parser": "^5.23.0",
+        "concurrently": "^7.1.0",
+        "eslint": "^8.15.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-import-resolver-typescript": "^2.7.1",
+        "eslint-plugin-eslint-comments": "^3.2.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-jest": "^26.2.1",
+        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-plugin-sonarjs": "^0.13.0",
+        "eslint-plugin-unicorn": "^42.0.0",
+        "jest": "^28.1.0",
+        "nodemon": "^2.0.16",
+        "prettier": "^2.6.2",
+        "ts-jest": "^28.0.2",
+        "ts-node": "^10.7.0",
+        "typescript": "^4.6.4"
+    }
+}
